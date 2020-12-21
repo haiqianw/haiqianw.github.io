@@ -1,0 +1,49 @@
+# index page sections
+# custom following lines to edit your index page
+- id: description
+  i18n: nav.description
+  name: Description
+  tpl: description.html
+  css:
+
+- id: dates
+  i18n: nav.dates
+  name: Dates
+  tpl: dates.html
+  css:
+
+- id: dataset
+  i18n: nav.dataset
+  name: Dataset
+  tpl: dataset.html
+  css:
+
+- id: submission
+  i18n: nav.submission
+  name: Submission
+  tpl: submission.html
+  css:
+
+- id: evaluation
+  i18n: nav.evaluation
+  name: Evaluation
+  tpl: evaluation.html
+  css:
+
+- id: awards
+  i18n: nav.awards
+  name: Awards
+  tpl: awards.html
+  css:
+
+- id: organizers
+  i18n: nav.organizers
+  name: Organizers
+  tpl: organizers.html
+  css:
+
+- id: contact
+  i18n: nav.contact
+  name: Contact
+  tpl: contact.html
+  css: contact
