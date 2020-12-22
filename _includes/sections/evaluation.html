@@ -7,16 +7,15 @@
           <p style="font-size:120%;">We identify it a No-Reference framework if
             a method predicts the quality of a compressed clip without any
             information from the reference. NR method is suitable for the
-            absolute score track. We will ask it to evaluate the score of the
-            reference if a NR method opts in competing in the relative score
-            track. If any information from the reference is used, a model will
+            absolute score track. Please note that we will ask a NR metric to evaluate the score of the
+            reference and its compressed version. If any information from the reference is used, a model will
             compete in the relative score track.</p>
 
           <p style="font-size:120%;">The submitted models will be evaluated by
             computing several commonly used metrics between subjective and
             objective score on the test set. We will consider the following
-            metrics: 1) Spearman Rank Order Correlation Coefficient (SROCC),
-            Pearson Linear Correlation Coefficient (PLCC) and Root Mean Squared
+            metrics: 1) Pearson Linear Correlation Coefficient (PLCC),
+            2) Spearman Rank Order Correlation Coefficient (SROCC), 3) Kendall Rank Order Correlation Coefficient (KROCC) and Root Mean Squared
             Error (RMSE). The final decision will also take running time, model
             complexity, and CPU/GPU loads into consideration.</p>
         </div>
