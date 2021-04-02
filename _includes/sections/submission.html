@@ -5,14 +5,21 @@
             <h1><span data-i18n="submission.submission">Submission</span></h1>
 
           <p style="font-size:120%;">The organizers will evaluate the performance
-            of submitted models on the test set. Participants are expected to
+            of submitted models on a hidden test set. Participants are expected to
             submit their source codes or executable compatible with typical
-            Linux operating systems. Make sure to give instructions to setup
-            the environment.</p>
+            Linux operating systems. Please see the following guidelines for submission:</p>
 
-          <p style="font-size:120%;">We will require participants to submit a
-            paper that describes technical details of the proposed method through
-            the ICME 2021 website.</p>
+            <p style="font-size:120%;">1. Participants need to submit all files needed for validating on the hidden test set. It includes a README that indicates how to run your code or executable, a requirements.txt to setup the environment, a pre-trained model, etc. Note that it is for inference purpose and we would not attempt to train submitted models from scratch.</p>
+
+            <p style="font-size:120%;">2. Participants should submit the prediction results on the publicly available test set. It could be a text file that contains video_name and prediction_result per line. Or a json file with video_name: prediction_result entries. It is used to make sure the submitted models give consistent results when run on different machines.</p>
+
+            <p style="font-size:120%;">3. Zip and name your model with teamName_track_date.zip. Meanwhile, name the prediction results on the publicly available test set with teamName_track_date.txt (or .json). Attach these two files and send an Email to wanghq03@pcl.ac.cn.</p>
+
+            <p style="font-size:120%;">Also, we will require participants to submit a
+              paper that describes technical details of the proposed method through
+              the ICME 2021 website.</p>
+
+
         </div>
     </div>
     <!-- <div class="row"> -->
