@@ -1,5 +1,11 @@
 # index page sections
 # custom following lines to edit your index page
+- id: leaderboard
+  i18n: nav.leaderboard
+  name: leaderboard
+  tpl: leaderboard.html
+  css:
+    
 - id: description
   i18n: nav.description
   name: Description
@@ -29,6 +35,12 @@
   name: Evaluation
   tpl: evaluation.html
   css:
+
+# - id: lb
+#   i18n: nav.lb
+#   name: LB
+#   tpl: lb.html
+#   css:
 
 - id: awards
   i18n: nav.awards

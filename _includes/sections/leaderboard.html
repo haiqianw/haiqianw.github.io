@@ -1,0 +1,83 @@
+<div class="container" id="i18_leaderboard">
+  <div class="row m-b-lg">
+    <div class="col-lg-12 text-left">
+      <div class="navy-line"></div>
+      <h1><span data-i18n="leaderboard.leaderboard">Leaderboard</span></h1>
+
+
+      <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
+      <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+      <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+
+      <script>
+        $(document).ready(function() {
+          $.extend( $.fn.dataTable.defaults, {
+    searching: false} );
+          $('#result_nr').DataTable({
+            "paging":   false,
+            "info":     false
+          });
+        } );
+      </script>
+
+      <p style="font-size:120%;">The following table gives benchmarking results of submitted models on the MOS track:</p>
+
+      <table id="result_nr">
+        {% for row in site.data.result_nr %}
+        <thead>
+          {% if forloop.first %}
+          <tr>
+            {% for pair in row %}
+            <th>{{ pair[0] }}</th>
+            {% endfor %}
+          </tr>
+          {% endif %}
+        </thead>
+        {% endfor %}
+        <tbody>
+          {% for row in site.data.result_nr %}
+          {% tablerow pair in row %}
+          {{ pair[1] }}
+          {% endtablerow %}
+          {% endfor %}
+        </tbody>
+      </table>
+      <br/>
+      <!-- <br/>  -->
+      <p style="font-size:120%;">And the results for the DMOS track:</p>
+
+      <script>
+        $(document).ready(function() {
+          $.extend( $.fn.dataTable.defaults, {
+    searching: false} );
+          $('#result_fr').DataTable({
+            "paging":   false,
+            "info":     false
+          });
+        } );
+      </script>
+
+      <table id="result_fr">
+        {% for row in site.data.result_fr %}
+        <thead>
+          {% if forloop.first %}
+          <tr>
+            {% for pair in row %}
+            <th>{{ pair[0] }}</th>
+            {% endfor %}
+          </tr>
+          {% endif %}
+        </thead>
+        {% endfor %}
+        <tbody>
+          {% for row in site.data.result_fr %}
+          {% tablerow pair in row %}
+          {{ pair[1] }}
+          {% endtablerow %}
+          {% endfor %}
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+</div>
