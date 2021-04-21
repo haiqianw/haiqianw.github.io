@@ -1,4 +1,2 @@
 Team, Date, PLCC, SROCC, KROCC, RMSE, Eligible
-team1,04/01,0.11,0.12,0.33,0.34,Yes
-team2,04/03,0.05,0.22,0.23,0.21,Yes
-team3,04/02,0.21,0.02,0.13,0.11,No
+gvsp,04/18,0.9771,0.9065,0.7561,0.2613,Yes
