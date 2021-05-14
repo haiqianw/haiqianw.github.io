@@ -81,6 +81,40 @@
         </tbody>
       </table>
 
+      <p style="font-size:120%;">One more thing, we also benchmark No-Reference metrics on the reference videos. </p>
+
+      <script>
+        $(document).ready(function() {
+          $.extend( $.fn.dataTable.defaults, {
+    searching: false} );
+          $('#result_nr_ref').DataTable({
+            "paging":   false,
+            "info":     false
+          });
+        } );
+      </script>
+
+      <table id="result_nr_ref">
+        {% for row in site.data.result_nr_ref %}
+        <thead>
+          {% if forloop.first %}
+          <tr>
+            {% for pair in row %}
+            <th>{{ pair[0] }}</th>
+            {% endfor %}
+          </tr>
+          {% endif %}
+        </thead>
+        {% endfor %}
+        <tbody>
+          {% for row in site.data.result_nr_ref %}
+          {% tablerow pair in row %}
+          {{ pair[1] }}
+          {% endtablerow %}
+          {% endfor %}
+        </tbody>
+      </table>
+
     </div>
   </div>
 </div>
