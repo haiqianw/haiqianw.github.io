@@ -5,7 +5,7 @@
   name: leaderboard
   tpl: leaderboard.html
   css:
-    
+
 - id: description
   i18n: nav.description
   name: Description
@@ -59,3 +59,15 @@
   name: Contact
   tpl: contact.html
   css: contact
+
+- id: projects
+  i18n: nav.projects
+  name: Sponsors
+  tpl: projects.html
+  css: projects
+
+# - id: sponsors
+#   i18n: nav.sponsors
+#   name: Sponsors
+#   tpl: sponsors.html
+#   css: sponsors
