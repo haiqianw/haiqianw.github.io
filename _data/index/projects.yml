@@ -5,7 +5,7 @@
 - name: Tencent
   i18n: tencent
   url: www.tencent.com
-  img: /static/assets/img/landing/meidalab.png
+  img: /static/assets/img/landing/medialab.png
   desc: This challenge is sponsored by Tencent.
 
 # - name: Google
