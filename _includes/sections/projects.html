@@ -20,9 +20,10 @@
               <div class="team-member">
                   <!-- <h4> -->
                   <p><span data-i18n="projects.{{ project.i18n }}">{{ project.desc }}</span></p>
+                  <a href="www.tencent.com" target="_blank"><span class="navy"> Tencent.</span></a>
                   <img src="{{ project.img | prepend: site.baseurl }}" class="img-responsive img-small" alt="">
-                  <a href="{{ project.url | prepend:}}" target="_blank"><span class="navy">{{ project.name }}</span></a>
-
+                  <!-- <a href="{{ project.url | prepend:}}" target="_blank"><span class="navy">{{ project.name }}</span></a> -->
+                  
                   <!-- {% if project.url %}
                   {% elsif project.repo %}
                   <a href="https://github.com/{{ project.gh_user }}/{{ project.repo }}" target="_blank"><span class="navy">{{ project.name }}</span></a>
