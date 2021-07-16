@@ -60,14 +60,14 @@
   tpl: contact.html
   css: contact
 
-- id: projects
-  i18n: nav.projects
-  name: Sponsors
-  tpl: projects.html
-  css: projects
-
-# - id: sponsors
-#   i18n: nav.sponsors
+# - id: projects
+#   i18n: nav.projects
 #   name: Sponsors
-#   tpl: sponsors.html
-#   css: sponsors
+#   tpl: projects.html
+#   css: projects
+
+- id: sponsors
+  i18n: nav.sponsors
+  name: Sponsors
+  tpl: sponsors.html
+  css: sponsors
